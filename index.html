@@ -22,10 +22,10 @@
                 <p class="name" style="text-align: center;">
                   Jiaxi Zheng
                 </p>
-                <p>I'm a research assistant at <a href="https://www.ri.cmu.edu/">Robotics Institute, Carnegie Mellon University</a> advised by Prof. Jiaoyang Li and Math, where I work on reconfigurable ocean robotics</a>. 
+                <p>I'm a research assistant at <a href="https://www.ri.cmu.edu/">Robotics Institute, Carnegie Mellon University</a> advised by Prof. Jiaoyang Li and </a>. 
                 </p>
                 <p>
-                  At CMU RI I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                  At CMU RI I've worked on reconfigurable underwater robotics, <a href="https://biorobotics.org/posts/2023/08/21/snake-robot_systems/"></a>Snake robots, <a href="https://www.ri.cmu.edu/"></a>In-pipe inspection robot </a>.
                 </p>
                 <p style="text-align:center">
                   <a href="jiaxiz@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
@@ -44,7 +44,8 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  I'm interested in building new paradigm of robotics by designing new mechanism and building control planning framwork. 
+                  Most of my research is about deploying the robots in physical world</span>.
                 </p>
               </td>
             </tr>
@@ -99,6 +100,54 @@
       </td>
     </tr>
 
+
+
+    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
+          <source src="images/nerfcasting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nerfcasting.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nerfcasting_start() {
+            document.getElementById('nerfcasting_image').style.opacity = "1";
+          }
+
+          function nerfcasting_stop() {
+            document.getElementById('nerfcasting_image').style.opacity = "0";
+          }
+          nerfcasting_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://nerf-casting.github.io/">
+          <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+        </a>
+        <br>
+				
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<strong>Jonathan T. Barron</strong>
+        <br>
+        <em>SIGGRAPH Asia</em>, 2024
+        <br>
+        <a href="https://nerf-casting.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+        <p></p>
+        <p>
+        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        </p>
+      </td>
+    </tr>  
+    
           <!-- </tbody></table> -->
           <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
