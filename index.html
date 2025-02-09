@@ -101,6 +101,49 @@
       </td>
     </tr>
 
+    <tr onmouseout="tensegraty_stop()" onmouseover="tensegraty_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='tensegraty_image'><video  width=100% muted autoplay loop>
+          <source src="images/tumblebot.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/tumblebot.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function tensegraty_start() {
+            document.getElementById('tensegraty_image').style.opacity = "1";
+          }
+          function tensegraty_stop() {
+            document.getElementById('tensegraty_image').style.opacity = "0";
+          }
+          tensegraty_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9811268">
+          <span class="papertitle">Design, Fabrication, and Characterization of a Hybrid Bionic Spherical Robotics With Multilegged Feedback Mechanism
+          </span>
+        </a>
+        <br>
+        <a href="">Peng Xu</a>,
+				<strong>Jiaxi Zheng</strong>
+        <a href="">Zhaochen Meng</a>,
+				<a href="">Jianhua Liu</a>,
+				<a href="">Siyuan Wang</a>, <br>
+				<a href="">Xinyu Wang</a>,
+				<a href="">Guangmin Xie</a>,
+				<a href="">Jin Tao</a>,
+				<a href="">Minyi Xu</a>,
+        <br>
+        <em>IEEE RA-L</em>, 2022
+        <br>
+        <p></p>
+        <p>
+        </p>
+      </td>
+    </tr>  
+  
     <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -140,7 +183,6 @@
         <br>
         <p></p>
         <p>
-        <!-- Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes. -->
         </p>
       </td>
     </tr>  
